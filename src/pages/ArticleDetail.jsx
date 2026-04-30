@@ -81,7 +81,7 @@ export default function ArticleDetail() {
           articleData={article}
         />
 
-        <div className="flex items-center justify-between mb-8 max-w-3xl mx-auto">
+        <div className="flex items-center justify-between mb-8  mx-auto">
           <Link to="/" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to News
@@ -94,7 +94,7 @@ export default function ArticleDetail() {
         <motion.header 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-8 max-w-3xl mx-auto"
+          className="mb-8  mx-auto"
         >
           <div className="flex items-center gap-4 mb-4">
             <span className="bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
@@ -124,7 +124,7 @@ export default function ArticleDetail() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="mb-12 rounded-2xl overflow-hidden aspect-video shadow-lg max-w-3xl mx-auto"
+          className="mb-12 rounded-2xl overflow-hidden aspect-video shadow-lg  mx-auto"
         >
           <img
             src={article.image}
@@ -138,11 +138,11 @@ export default function ArticleDetail() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="font-body text-base leading-relaxed prose prose-lg max-w-3xl mx-auto prose-blue mb-12 dark:prose-invert"
+          className="font-body text-base leading-relaxed prose prose-lg  mx-auto prose-blue mb-12 dark:prose-invert"
           dangerouslySetInnerHTML={{ __html: article.content }}
         />
 
-        <footer className="pt-8 border-t border-gray-100 dark:border-gray-800 mb-20 max-w-3xl mx-auto">
+        <footer className="pt-8 border-t border-gray-100 dark:border-gray-800 mb-20  mx-auto">
           <div className="flex flex-wrap gap-2 mb-8">
             {article.tags.map((tag) => (
               <span 
