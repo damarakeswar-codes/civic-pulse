@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-900 bg-gray-50 dark:bg-gray-950 dark:text-gray-100 antialiased transition-colors duration-300;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom Prose Styles for Article Content */
+.prose h2 {
+  @apply text-2xl font-bold mt-8 mb-4 dark:text-gray-100;
+}
+
+.prose h3 {
+  @apply text-xl font-bold mt-6 mb-3 dark:text-gray-100;
+}
+
+.prose p {
+  @apply mb-4 dark:text-gray-300;
+}
+
+.prose ul {
+  @apply list-disc pl-6 mb-4 dark:text-gray-300;
+}
+
+.prose li {
+  @apply mb-2 dark:text-gray-300;
+}
+
+.prose a {
+  @apply text-blue-600 dark:text-blue-400 font-bold hover:underline;
+}
+
+.prose strong {
+  @apply font-bold dark:text-gray-200;
+}
+
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
