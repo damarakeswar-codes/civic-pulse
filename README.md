@@ -1,20 +1,61 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Civic Pulse Media
 
-# Run and deploy your AI Studio app
+Civic Pulse Media is a modern, responsive web application that provides the latest insights, trends, and news from around the globe. Built with React and Vite, it offers a fast and seamless reading experience with features like category filtering, pagination, and a beautiful dark mode.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/75a63f0d-f6d5-42a7-b152-c4737b36a09f
+- 📰 **Latest News & Articles**: Stay updated with the most recent stories.
+- 🗂️ **Category Filtering**: Browse articles by topics like Technology, Lifestyle, and Finance.
+- 🌓 **Dark Mode Support**: Seamlessly switch between light and dark themes for comfortable reading.
+- 📱 **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices.
+- 🚀 **Fast Performance**: Built with Vite and React for lightning-fast load times.
+- 🔍 **SEO Optimized**: Uses React Helmet for dynamic meta tags and improved search visibility.
 
-## Run Locally
+## Technologies Used
 
-**Prerequisites:**  Node.js
+- **Framework**: [React](https://react.dev/) 19 + [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) v4
+- **Routing**: [React Router](https://reactrouter.com/) v7
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Animations**: [Motion](https://motion.dev/)
+- **SEO**: [React Helmet Async](https://github.com/staylor/react-helmet-async)
 
+## Prerequisites
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- npm or yarn
+
+## Getting Started
+
+1. **Clone the repository** (if applicable)
+   ```bash
+   git clone <repository-url>
+   cd civic-pulse
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+   The app will typically be available at `http://localhost:3000`.
+
+## Build for Production
+
+To create a production-ready build, run:
+```bash
+npm run build
+```
+
+To preview the production build locally:
+```bash
+npm run preview
+```
+
+## License
+
+This project is open-source and available under the MIT License.
